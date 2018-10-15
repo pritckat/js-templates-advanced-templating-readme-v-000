@@ -1,5 +1,5 @@
 Handlebars.registerHelper('comment_body', function() {
-  if(this.state === "closed") {
+  if(this.state === "open") {
     return new Handlebars.SafeString("<strong>" + this.body + "</strong>")
   }
 })
